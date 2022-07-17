@@ -1,0 +1,232 @@
+/* start variables */
+:root {
+  --grey: #9fa3a7;
+  --blue: #267df4;
+  --green: #6fc754;
+  --font-color: #26272d;
+}
+/* end varibales */
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat";
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+/* small*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*large*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global rules */
+/* start components */
+
+/* end components */
+
+/* start main */
+.main {
+  position: relative;
+  height: 100vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+}
+.main::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #ffffff70;
+  z-index: 0;
+}
+.main .container {
+  height: 100%;
+  z-index: 5;
+  position: relative;
+}
+.main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  position: relative;
+}
+.main nav > a {
+  font-size: 20px;
+}
+.main span {
+  font-weight: bold;
+}
+.main nav > ul {
+  display: flex;
+  gap: 25px;
+}
+.main nav > ul > li:first-child a {
+  color: var(--green);
+}
+.main nav > ul > li > a {
+  transition: 0.3s;
+}
+.main nav > ul > li > a:hover {
+  color: var(--green);
+}
+.main #pages {
+  position: relative;
+}
+.main #pages > ul {
+  position: absolute;
+  background: white;
+  padding: 10px;
+  width: 120px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 3px solid var(--green);
+  right: 0;
+  top: 200%;
+  transition: 0.3s;
+  opacity: 0;
+  z-index: -1;
+}
+.main #pages:hover > ul {
+  top: 105%;
+  opacity: 1;
+  display: flex;
+  z-index: 0;
+}
+.main #pages > ul li a {
+  transition: 0.3s;
+  font-size: 0.9em;
+  display: block;
+  width: 100%;
+}
+.main #pages > ul li:hover a {
+  text-indent: 8px;
+  color: var(--green);
+}
+.main nav > i {
+  display: none;
+  font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  .main nav > i {
+    display: block;
+  }
+  .main nav > ul {
+    position: absolute;
+    left: -15px;
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    background: white;
+    width: 100vw;
+    padding: 15px;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .main nav > i:hover + ul {
+    display: flex;
+    opacity: 1;
+  }
+  .main #pages > ul,
+  .main #pages:hover > ul,
+  .main #pages i {
+    display: none;
+  }
+}
+.main .text {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main h1 {
+  font-size: 4em;
+  text-align: center;
+  margin: 0;
+  width: 80%;
+}
+.main p {
+  margin: 35px;
+  font-size: 1.3em;
+}
+.main button {
+  transition: 0.3s;
+  border-radius: 25px;
+  border: 1px solid var(--font-color);
+  background: transparent;
+}
+.main button:hover {
+  background: var(--font-color);
+}
+.main button a {
+  transition: 0.3s;
+}
+.main button:hover a {
+  color: white;
+}
+.main button a {
+  padding: 15px 50px;
+  display: block;
+}
+/* responsive main text */
+@media (max-width: 992px) {
+  .main h1 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .main .text {
+    height: 70%;
+  }
+  .main h1 {
+    font-size: 2em;
+  }
+  .main p {
+    margin: 20px;
+    font-size: 1em;
+    text-align: center;
+  }
+  .main button {
+    border-radius: 20px;
+  }
+  .main button a {
+    padding: 10px 40px;
+    display: block;
+  }
+}
+/* end main */
