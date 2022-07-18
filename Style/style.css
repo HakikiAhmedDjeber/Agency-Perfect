@@ -1,6 +1,7 @@
 /* start variables */
 :root {
   --grey: #9fa3a7;
+  --bg-grey: #f5f5f8;
   --blue: #267df4;
   --green: #6fc754;
   --font-color: #26272d;
@@ -52,7 +53,30 @@ a {
 }
 /* end global rules */
 /* start components */
-
+.main-heading {
+  position: relative;
+  text-align: center;
+  margin: 0 0 60px;
+  font-size: 2.5em;
+  font-weight: normal;
+  color: var(--font-color);
+}
+.main-heading::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: var(--blue);
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-heading + p {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--grey);
+}
 /* end components */
 
 /* start main */
@@ -273,3 +297,33 @@ a {
   }
 }
 /* end responsive */
+/* start services */
+.services {
+  padding: 30px 0;
+  background-color: var(--bg-grey);
+}
+.services .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
+}
+.services .cards .box {
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  flex: 1;
+  padding: 5px;
+}
+.services .cards .box h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.services .cards .box p {
+  text-align: center;
+  color: var(--grey);
+  line-height: 1.5;
+}
+/* end services */
