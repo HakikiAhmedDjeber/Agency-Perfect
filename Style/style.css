@@ -484,10 +484,18 @@ input:focus {
   padding: 10px 15px;
   border-radius: 30px;
   overflow: hidden;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .email form {
+    width: 85vw;
+  }
 }
 .email input[type="email"] {
   border: none;
-  width: 350px;
+  width: 70%;
 }
 .email input[type="email"]:focus {
   background: var(--bg-grey);
