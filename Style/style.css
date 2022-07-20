@@ -561,10 +561,15 @@ footer .info .contact li {
 }
 footer .info .contact li:not(:first-child) {
   padding-left: 30px;
+  color: var(--grey);
+}
+footer .info .contact li:not(:first-child) {
+  color: var(--grey);
 }
 footer .info .contact li:not(:first-child) a,
 footer .info .sections li:not(:first-child) a {
   transition: 0.3s;
+  color: var(--grey);
 }
 footer .info .contact li:not(:first-child) a:hover,
 footer .info .sections li:not(:first-child):hover a {
