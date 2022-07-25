@@ -31,7 +31,6 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--font-color);
 }
 input:focus {
   outline: none;
@@ -80,6 +79,60 @@ input:focus {
   font-size: 1.3em;
   color: var(--grey);
 }
+.second-page-heading {
+  font-weight: normal;
+  font-size: 3em !important;
+  color: white;
+  position: relative;
+  padding: 0 0 30px;
+}
+.second-page-heading::before,
+.second-page-heading::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.second-page-heading::before {
+  height: 10px;
+  bottom: 10px;
+}
+.second-page-heading::after {
+  height: 5px;
+  bottom: 0;
+}
+.page-road {
+  font-size: 1em !important;
+  color: white;
+}
+.main.second {
+  height: fit-content;
+}
+@media (min-width: 768px) {
+  .main.second a:not(.a-slide) {
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  .main.second nav > a {
+    color: white;
+  }
+}
+.main.second nav > ul > li > a:hover {
+  color: var(--green);
+}
+.main.second::after {
+  background: #26272d65;
+}
+.main.second nav > i {
+  color: white;
+}
+.main.second .text {
+  height: fit-content;
+  padding: 40px 0;
+}
 /* end components */
 
 /* start main */
@@ -88,6 +141,7 @@ input:focus {
   height: 100vh;
   background-image: url("../images/hero.jpg");
   background-size: cover;
+  background-position: center;
 }
 .main::after {
   position: absolute;
@@ -98,10 +152,14 @@ input:focus {
   background: #ffffff70;
   z-index: 0;
 }
+.main a {
+  color: var(--font-color);
+}
 .main .container {
   height: 100%;
   z-index: 5;
   position: relative;
+  padding: 15px;
 }
 .main nav {
   display: flex;
@@ -659,3 +717,9 @@ footer .copyright .brand span {
   text-align: center;
 }
 /* end footer */
+
+/* start the protfolio page */
+.main.portfolio {
+  background-image: url("../images/portfolio-hero.jpg");
+}
+/* end the protfolio page */
