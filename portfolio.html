@@ -23,10 +23,10 @@
     <header class="main second portfolio">
       <div class="container">
         <nav>
-          <a href="#"><span>Agency</span>Perfect</a>
+          <a href="./index.html"><span>Agency</span>Perfect</a>
           <i class="fas fa-bars"></i>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li id="pages">
               <a href="#">Pages <i class="fas fa-caret-down"></i></a>
               <ul>
@@ -46,6 +46,49 @@
         </div>
       </div>
     </header>
+    <div class="projects">
+      <div class="container">
+        <ul class="domains">
+          <li>All</li>
+          <li>Web Design</li>
+          <li>Photography</li>
+          <li>Moblie App</li>
+          <li>Branding</li>
+          <li>Illustration</li>
+        </ul>
+        <div class="cards">
+          <div class="card">
+            <img src="./images/portfolio-1.jpg" alt="" />
+            <div class="slide">
+              <p>Portfolio item</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/portfolio-2.jpg" alt="" />
+            <div class="slide">
+              <p>Portfolio item</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/portfolio-3.jpg" alt="" />
+            <div class="slide">
+              <p>Portfolio item</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/portfolio-4.jpg" alt="" />
+            <div class="slide">
+              <p>Portfolio item</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+        </div>
+        <button>Load More</button>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="info">
@@ -110,5 +153,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      let mybars = document.querySelector(".fa-bars");
+      let myList = document.querySelector(".main nav > ul");
+      mybars.onclick = function () {
+        myList.style.display = "flex";
+        myList.style.opacity = "1";
+      };
+    </script>
   </body>
 </html>

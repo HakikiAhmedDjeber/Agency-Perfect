@@ -166,56 +166,56 @@
       <h2 class="main-heading">Latest work</h2>
       <p>This is some of our best work</p>
       <div class="container">
-        <div class="box">
+        <div class="card">
           <img src="./images/portfolio-1.jpg" alt="" />
           <div class="slide">
             <p>Portfolio item</p>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
-        <div class="box">
+        <div class="card">
           <img src="./images/portfolio-2.jpg" alt="" />
           <div class="slide">
             <p>Portfolio item</p>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
-        <div class="box">
+        <div class="card">
           <img src="./images/portfolio-3.jpg" alt="" />
           <div class="slide">
             <p>Portfolio item</p>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
-        <div class="box">
+        <div class="card">
           <img src="./images/portfolio-4.jpg" alt="" />
           <div class="slide">
             <p>Portfolio item</p>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
-        <div class="box">
+        <div class="card">
           <img src="./images/portfolio-8.jpg" alt="" />
           <div class="slide">
             <p>Portfolio item</p>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
-        <div class="box">
+        <div class="card">
           <img src="./images/portfolio-5.jpg" alt="" />
           <div class="slide">
             <p>Portfolio item</p>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
-        <div class="box">
+        <div class="card">
           <img src="./images/portfolio-6.jpg" alt="" />
           <div class="slide">
             <p>Portfolio item</p>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
-        <div class="box">
+        <div class="card">
           <img src="./images/portfolio-7.jpg" alt="" />
           <div class="slide">
             <p>Portfolio item</p>
@@ -297,5 +297,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      let mybars = document.querySelector(".fa-bars");
+      let myList = document.querySelector(".main nav > ul");
+      mybars.onclick = function () {
+        myList.style.display = "flex";
+        myList.style.opacity = "1";
+      };
+    </script>
   </body>
 </html>
