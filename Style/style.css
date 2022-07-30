@@ -910,6 +910,15 @@ main.project .description > a:hover {
   color: var(--grey);
   align-items: center;
 }
+@media (max-width: 768px) {
+  .blog + main .posts .post ul {
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .blog + main .posts .post li a {
+    font-size: 0.7em;
+  }
+}
 .blog + main .posts .post li a i {
   font-size: 1.8em;
 }
@@ -971,7 +980,9 @@ main.project .description > a:hover {
   display: flex;
   margin: 10px auto;
   gap: 15px;
+  align-items: center;
 }
+
 .blog + main .numbers li a {
   padding: 9px 15px;
   background: var(--bg-grey);
@@ -979,6 +990,14 @@ main.project .description > a:hover {
   border-radius: 10px;
   width: 40px;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .blog + main .numbers {
+    gap: 5px;
+  }
+  .blog + main .numbers li a {
+    width: 35px;
+  }
 }
 .blog + main .numbers li a:hover {
   background: var(--green);
