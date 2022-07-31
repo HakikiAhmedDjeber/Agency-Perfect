@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Agency Perfect</title>
+    <title>Blog Post | Agency Perfect</title>
     <!--this is the main style file-->
     <link rel="stylesheet" href="Style/style.css" />
     <!-- this is the flie for normalize the elements -->
@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <header class="main second portfolio">
+    <header class="main second contact">
       <div class="container">
         <nav>
           <a href="./index.html"><span>Agency</span>Perfect</a>
@@ -28,75 +28,71 @@
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li id="pages">
-              <a href="blog.html">Pages <i class="fas fa-caret-down"></i></a>
+              <a href="#">Pages <i class="fas fa-caret-down"></i></a>
               <ul>
-                <li><a class="a-slide" href="#">Portfolio</a></li>
-                <li><a class="a-slide" href="#">Blog</a></li>
+                <li><a class="a-slide" href="portfolio.html">Portfolio</a></li>
+                <li><a class="a-slide" href="blog.html">Blog</a></li>
               </ul>
             </li>
-            <li class="hover"><a href="#">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="hover"><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="#">UI Elements</a></li>
           </ul>
         </nav>
         <div class="text">
-          <h1 class="second-page-heading">Portfolio</h1>
-          <p class="page-road">Home / Portfolio</p>
+          <h1 class="second-page-heading">Contact</h1>
+          <p class="page-road">Home / Contact</p>
         </div>
       </div>
     </header>
-    <div class="projects">
+    <main>
       <div class="container">
-        <ul class="domains">
-          <li>All</li>
-          <li>Web Design</li>
-          <li>Photography</li>
-          <li>Moblie App</li>
-          <li>Branding</li>
-          <li>Illustration</li>
-        </ul>
-        <div class="cards">
-          <div class="card">
-            <img src="./images/portfolio-1.jpg" alt="" />
-            <div class="slide">
-              <p>Portfolio item</p>
-              <a href="./portfolio-item.html"
-                ><i class="fas fa-long-arrow-alt-right"></i
-              ></a>
+        <div class="message">
+          <h3>SEND A MESSAGE</h3>
+          <form action="">
+            <div class="info">
+              <div class="name">
+                <label for="name">Name :</label>
+                <input id="name" type="text" />
+              </div>
+              <div class="email2">
+                <label for="email">Email :</label>
+                <input id="email" type="email" />
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="./images/portfolio-2.jpg" alt="" />
-            <div class="slide">
-              <p>Portfolio item</p>
-              <a href="./portfolio-item.html"
-                ><i class="fas fa-long-arrow-alt-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/portfolio-3.jpg" alt="" />
-            <div class="slide">
-              <p>Portfolio item</p>
-              <a href="./portfolio-item.html"
-                ><i class="fas fa-long-arrow-alt-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/portfolio-4.jpg" alt="" />
-            <div class="slide">
-              <p>Portfolio item</p>
-              <a href="./portfolio-item.html"
-                ><i class="fas fa-long-arrow-alt-right"></i
-              ></a>
-            </div>
-          </div>
+            <label for="subject">Subject :</label>
+            <input id="subject" type="text" />
+            <label for="message">Message :</label>
+            <textarea name="message" id="message"></textarea>
+            <button>Contact us</button>
+          </form>
         </div>
-        <button>Load More</button>
+        <aside>
+          <h3>CONTACT INFORMATION</h3>
+          <ul>
+            <li>
+              <span>Address</span>
+              <address>Bab dayah, SBA, Algeria</address>
+            </li>
+            <li>
+              <span>E-mail</span>
+              <a href="mailto:hakikiahmeddjber@gmail.com">
+                hakikiahmeddjber@gmail.com
+              </a>
+            </li>
+            <li>
+              <span>Phone</span>
+              <a href="tel:208 333 9296">(208) 333 9296</a>
+            </li>
+            <li>
+              <span>Fax</span>
+              <a href="tel:208 333 9296">(208) 333 9296</a>
+            </li>
+          </ul>
+        </aside>
       </div>
-    </div>
+    </main>
     <footer>
       <div class="container">
         <div class="info">
