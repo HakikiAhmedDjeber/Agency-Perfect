@@ -510,6 +510,7 @@ input:focus {
   flex-wrap: wrap;
   margin: 50px auto 0;
   gap: 30px;
+  width: 100%;
 }
 .card {
   min-width: 250px;
@@ -527,7 +528,7 @@ input:focus {
 }
 @media (max-width: 768px) {
   .card {
-    max-width: 100%;
+    min-width: 100%;
   }
 }
 .card img {
@@ -896,6 +897,7 @@ main.project .description > a:hover {
   align-self: end;
   margin: 0 0 20px;
   color: var(--grey);
+  text-transform: uppercase;
 }
 .blog + main .posts .post ul {
   display: flex;
@@ -921,6 +923,7 @@ main.project .description > a:hover {
 }
 .blog + main .posts .post li a i {
   font-size: 1.8em;
+  height: 30px;
 }
 .blog + main .posts .post li img {
   height: 30px;
@@ -1008,3 +1011,95 @@ main.project .description > a:hover {
   background: var(--green);
 }
 /* end the blog page */
+/* start the blog post page */
+.blog-post > p:not(.last) {
+  margin-bottom: 5px !important;
+}
+.comments h3,
+.post-comment h3 {
+  font-weight: normal;
+  margin: 10px 0;
+}
+.comments .comment {
+  display: flex;
+  align-items: start;
+}
+.comments .comment.replay {
+  margin: 15px 0;
+  margin-left: 75px;
+  padding: 14px 0;
+  border-top: 1px solid var(--grey);
+}
+.comments .comment img {
+  height: 75px;
+}
+.comments .comment.replay img {
+  height: 75px;
+  width: 75px;
+}
+.comments .comment .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comments .comment .text .info {
+  background: var(--bg-grey);
+  padding: 10px 10px 10px 20px;
+  color: var(--grey);
+}
+.comments .comment .text .info span:first-child {
+  margin-right: 20px;
+}
+.comments .comment .text .info i {
+  margin-right: 3px;
+}
+.comments .comment .text .content {
+  padding-left: 20px;
+  color: var(--grey);
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+.comments .comment .text .content p {
+  margin-bottom: 15px;
+}
+.comments .comment .text .content a {
+  transition: 0.3s;
+  float: right;
+  color: var(--grey);
+  font-size: 1.1em;
+}
+.comments .comment .text .content a:hover {
+  color: var(--green);
+}
+.post-comment form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post-comment form input:focus {
+  outline: none;
+  background: var(--bg-grey);
+}
+.post-comment form input {
+  border: 1px solid var(--bg-grey);
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+  font-size: 0.9em;
+}
+.post-comment form input#comment {
+  padding-bottom: 50px;
+}
+.post-comment form input:last-of-type {
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  background: var(--green);
+  color: white;
+  transition: 0.3s;
+}
+.post-comment form input:last-of-type:hover {
+  background-color: var(--font-color);
+}
+/* end the blog post page */
