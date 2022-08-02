@@ -984,14 +984,14 @@ main.project .description > a:hover {
 .blog + main aside .tags ul li:not(:first-child) {
   border-top: 1px solid #dadada;
 }
-.blog + main .numbers {
+.numbers {
   display: flex;
   margin: 10px auto;
   gap: 15px;
   align-items: center;
 }
 
-.blog + main .numbers li a {
+.numbers li a {
   padding: 9px 15px;
   background: var(--bg-grey);
   display: flex;
@@ -1000,18 +1000,18 @@ main.project .description > a:hover {
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .blog + main .numbers {
+  .numbers {
     gap: 5px;
   }
-  .blog + main .numbers li a {
+  .numbers li a {
     width: 35px;
   }
 }
-.blog + main .numbers li a:hover {
+.numbers li a:hover {
   background: var(--green);
   color: white !important;
 }
-.blog + main .numbers li:nth-child(4) a {
+.numbers li:nth-child(4) a {
   color: white;
   background: var(--green);
 }
@@ -1202,3 +1202,174 @@ main.project .description > a:hover {
   color: var(--green);
 }
 /* end the contact page */
+/* start ui elements page */
+.ui {
+  background-image: url("../images/portfolio-hero.jpg");
+}
+.ui + main {
+  padding: 60px 0;
+  background: white;
+}
+.ui + main .h {
+  margin: 10px 0;
+  font-weight: normal;
+  color: var(--font-color);
+}
+.ui + main .h + p {
+  color: var(--grey);
+  margin-bottom: 30px;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.h1 {
+  font-size: 3em;
+}
+.h2 {
+  font-size: 2.5em;
+}
+.h3 {
+  font-size: 2em;
+}
+.h4 {
+  font-size: 1.5em;
+}
+.h5 {
+  font-size: 1em;
+}
+.h6 {
+  font-size: 0.7em;
+}
+.ui + main .buttons {
+  margin: 40px 0;
+}
+.ui + main .buttons ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+.ui + main .buttons ul button,
+.ui + main .form button {
+  cursor: pointer;
+  padding: 20px 60px;
+  border-radius: 30px;
+  color: var(--font-color);
+  border: none;
+  background: white;
+  transition: 0.3s;
+}
+.ui + main .buttons ul button.white {
+  border: 1px solid;
+}
+.ui + main .buttons ul button.blue {
+  background: var(--blue);
+  color: white;
+}
+.ui + main .buttons ul button.green,
+.ui + main .form button {
+  background: var(--green);
+  color: white;
+}
+.ui + main .buttons ul button.grey {
+  background: var(--grey);
+}
+.ui + main .buttons ul button:hover,
+.ui + main .form button:hover {
+  color: white;
+  background-color: var(--font-color);
+}
+.ui + main .buttons ul button.grey:hover {
+  color: white;
+  background-color: var(--green);
+}
+.ui + main .form {
+  margin: 40px 0;
+}
+.ui + main .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+.ui + main .form form label {
+  font-weight: bold;
+}
+.ui + main .form input {
+  padding: 10px;
+  border: 1px solid var(--bg-grey);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.ui + main .form input:focus {
+  background: var(--bg-grey);
+}
+.ui + main .form button {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: fit-content;
+  padding: 15px 55px;
+}
+.ui + main .selections {
+  margin: 50px 0;
+}
+.ui + main .selections > ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.ui + main .selections > ul > li {
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.ui + main .selections ul .list select {
+  padding: 10px 5px;
+  width: 120px;
+  color: var(--font-color);
+  border-radius: 8px;
+}
+.ui + main .selections .checkboxes li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.ui + main .selections .checkboxes input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+.ui + main .selections .checkboxes input[type="checkbox"]:checked {
+  accent-color: var(--green);
+}
+.ui + main .selections .checkboxes li label {
+  font-size: 1.2em;
+  color: var(--font-color);
+}
+.ui + main .selections .radio li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.ui + main .selections .radio input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+.ui + main .selections .radio input[type="radio"]:checked {
+  accent-color: var(--green);
+}
+.ui + main .selections .radio li label {
+  font-size: 1.2em;
+  color: var(--font-color);
+}
+.ui + main .pagination {
+  margin: 60px 0;
+}
+.ui + main .pagination .numbers {
+  width: fit-content;
+  margin: 30px auto;
+}
+/* end ui elements page */
